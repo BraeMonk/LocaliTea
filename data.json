@@ -1,0 +1,184 @@
+{
+    "loginPage": {
+      "username": "",
+      "email": "",
+      "error": "Invalid username or password. Please try again."
+    },
+    "signupPage": {
+      "username": "",
+      "password": "",
+      "email": "",
+      "businessName": "",
+      "businessAddress": "",
+      "error": "Error sending verification email. Please try again."
+    },
+    "navbar": {
+      "searchBar": "",
+      "messagesButton": "Messages",
+      "logoutButton": "Logout"
+    },
+    "messagesTab": {
+      "messages": []
+    },
+    "tabs": {
+      "home": "Home",
+      "directory": "Directory",
+      "promotions": "Promotions",
+      "profile": "Profile"
+    },
+    "tabContent": {
+      "home": {
+        "title": "Home Feed",
+        "content": []
+      },
+      "directory": {
+        "title": "Business Directory",
+        "content": []
+      },
+      "promotions": {
+        "title": "Promotions",
+        "content": []
+      },
+      "upload": {
+        "title": "Upload Content",
+        "file": ""
+      },
+      "profile": {
+        "title": "Profile",
+        "userName": "",
+        "bio": "",
+        "businessName": "",
+        "businessAddress": "",
+        "profileContent": []
+      }
+    },
+    "localStorage": {
+      "users": []
+    },
+    "styles": {
+      "body": {
+        "font-family": "Arial, sans-serif",
+        "background-color": "#f9f9f9",
+        "margin": "0",
+        "padding": "0",
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center",
+        "height": "100vh"
+      },
+      "form-container": {
+        "background-color": "white",
+        "padding": "20px",
+        "border-radius": "8px",
+        "box-shadow": "0 0 10px rgba(0, 0, 0, 0.1)",
+        "width": "300px"
+      },
+      "form-container h2": {
+        "text-align": "center",
+        "margin-bottom": "20px"
+      },
+      "form-container input": {
+        "width": "100%",
+        "padding": "10px",
+        "margin": "10px 0",
+        "border": "1px solid #ccc",
+        "border-radius": "4px"
+      },
+      "form-container button": {
+        "width": "100%",
+        "padding": "10px",
+        "background-color": "#4CAF50",
+        "color": "white",
+        "border": "none",
+        "border-radius": "4px",
+        "cursor": "pointer"
+      },
+      "form-container button:hover": {
+        "background-color": "#45a049"
+      },
+      "form-toggle": {
+        "text-align": "center",
+        "margin-top": "10px"
+      },
+      "form-toggle button": {
+        "background": "none",
+        "border": "none",
+        "color": "#4CAF50",
+        "cursor": "pointer"
+      },
+      "error-message": {
+        "color": "red",
+        "text-align": "center",
+        "margin-top": "10px"
+      },
+      "navbar": {
+        "display": "flex",
+        "justify-content": "space-between",
+        "padding": "10px",
+        "background-color": "#4CAF50",
+        "color": "white",
+        "width": "100%"
+      },
+      "navbar input": {
+        "width": "70%",
+        "padding": "10px",
+        "border": "1px solid #ccc",
+        "border-radius": "4px"
+      },
+      "messages-tab": {
+        "background-color": "white",
+        "border-radius": "8px",
+        "box-shadow": "0 0 10px rgba(0, 0, 0, 0.1)",
+        "padding": "20px",
+        "width": "300px",
+        "margin": "0 auto",
+        "margin-top": "20px"
+      },
+      "messages-tab h2": {
+        "text-align": "center",
+        "margin-bottom": "20px"
+      },
+      "bottom-nav": {
+        "position": "fixed",
+        "bottom": "0",
+        "width": "100%",
+        "background-color": "#4CAF50",
+        "display": "flex",
+        "justify-content": "space-around",
+        "padding": "10px 0"
+      },
+      "tab-button": {
+        "background": "none",
+        "border": "none",
+        "color": "white",
+        "padding": "10px 20px",
+        "cursor": "pointer"
+      },
+      "tab-content": {
+        "padding": "20px",
+        "display": "none"
+      },
+      "tab-content h2": {
+        "text-align": "center",
+        "margin-bottom": "20px"
+      },
+      "profile-info": {
+        "background-color": "white",
+        "padding": "20px",
+        "border-radius": "8px",
+        "box-shadow": "0 0 10px rgba(0, 0, 0, 0.1)",
+        "width": "300px",
+        "margin": "0 auto"
+      }
+    },
+    "apiEndpoints": {
+      "flask": {
+        "sendVerificationEmail": "/send-verification-email",
+        "verifyEmail": "/verify-email"
+      },
+      "node": {
+        "sendVerificationEmail": "/send-verification-email"
+      }
+    }
+  }
+  
