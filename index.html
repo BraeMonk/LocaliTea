@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business Network</title>
+    <link rel="stylesheet" href="/static/css/sci-fi-styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="form-container" id="login-page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Username" id="login-username" required>
+            <input type="password" placeholder="Password" id="login-password" required>
+            <button type="submit">Login</button>
+        </form>
+        
+        <div class="form-toggle">
+            <p>Don't have an account? <button type="button" onclick="toggleForms()">Sign Up</button></p>
+        </div>
+        <div id="login-error" class="error-message"></div>
+    </div>
+
+    <!-- Signup Page -->
+    <div class="form-container" id="signup-page" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" placeholder="Username" id="signup-username" required>
+            <input type="password" placeholder="Password" id="signup-password" required>
+            <input type="email" placeholder="Email" id="signup-email" required>
+            <input type="text" placeholder="Business Name" id="signup-business-name" required>
+            <input type="text" placeholder="Business Address" id="signup-business-address" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="form-toggle">
+            <p>Already have an account? <button type="button" onclick="toggleForms()">Login</button></p>
+        </div>
+        <div id="signup-error" class="error-message"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar" style="display: none;">
+        <input type="text" placeholder="Search businesses..." class="search-bar" id="search-bar">
+        <button type="button" class="messages-button" onclick="toggleMessages()">Messages</button>
+        <button type="button" class="logout-button" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Messages Tab -->
+    <div class="messages-tab" id="messages-tab" style="display: none;">
+        <h2>Messages</h2>
+        <div id="messages-list">
+            <p>No messages yet.</p>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Tabs -->
+    <div class="bottom-nav" id="bottom-nav" style="display: none;">
+        <button class="tab-button" type="button" onclick="showTab('home')">Home</button>
+        <button class="tab-button" type="button" onclick="showTab('directory')">Directory</button>
+        <button class="tab-button" type="button" onclick="showTab('promotions')">Promotions</button>
+        <button class="tab-button" type="button" onclick="showTab('profile')">Profile</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="home" style="display: none;">
+        <h2>Home Feed</h2>
+        <div class="feed" id="home-feed">
+            <!-- User content will go here -->
+        </div>
+    </div>
+    <div class="tab-content" id="directory" style="display: none;">
+        <h2>Business Directory</h2>
+        <div class="directory" id="business-directory">
+            <!-- Business directory content will go here -->
+        </div>
+    </div>
+    <div class="tab-content" id="promotions" style="display: none;">
+        <h2>Promotions</h2>
+        <div class="promotions" id="promotions-content">
+            <!-- Promotions content will go here -->
+        </div>
+    </div>
+    <div class="tab-content" id="upload" style="display: none;">
+        <h2>Upload Content</h2>
+        <form id="upload-form">
+            <input type="file" accept="image/*,video/*,audio/*" id="upload-file" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="uploaded-content">
+            <!-- Uploaded content will be displayed here -->
+        </div>
+    </div>
+    <div class="tab-content" id="profile" style="display: none;">
+        <h2>Profile</h2>
+        <div class="profile-info">
+            <label>Name: <input type="text" id="user-name-input"></label>
+            <label>Bio: <textarea id="user-bio-input"></textarea></label>
+            <label>Business Name: <input type="text" id="business-name-input"></label>
+            <label>Business Address: <input type="text" id="business-address-input"></label>
+            <button type="button" onclick="saveUserProfile()">Save Profile</button>
+        </div>
+        <div class="profile-content" id="profile-content">
+            <!-- User uploaded content will go here -->
+        </div>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
